@@ -77,7 +77,7 @@ connect.createServer(connect.bodyParser(), connect.router(function (app) {
     });
 
     // POST - /EDIT
-    app.post('/Edit', function (request, response) {
+    app.post('/Edit/:id', function (request, response) {
         // 변수를 선언합니다.
         var body = request.body
 
